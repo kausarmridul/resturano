@@ -1,7 +1,7 @@
 // Preloader Js
 
 $(document).ready(function () {
-    $('.preloader').delay(2500).fadeOut();
+    $('.preloader').addClass('hide');
 });
 
 // ScrollTop Js

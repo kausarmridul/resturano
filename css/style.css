@@ -292,6 +292,19 @@ ul {
     line-height: 80px !important;
 }
 
+.hide {
+    transform: translateY(-100vh);
+    transition: all linear 1s 2s;
+    -webkit-transition: all linear 1s 2s;
+    -moz-transition: all linear 1s 2s;
+    -ms-transition: all linear 1s 2s;
+    -o-transition: all linear 1s 2s;
+    -webkit-transform: translateY(-100vh);
+    -moz-transform: translateY(-100vh);
+    -ms-transform: translateY(-100vh);
+    -o-transform: translateY(-100vh);
+}
+
 /* ==========
     Menu Ends
 =========== */
