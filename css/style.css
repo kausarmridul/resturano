@@ -118,18 +118,15 @@ ul {
 
 
 
-
-
-
 /*  ===============
     Preloader Ends
 ================= */
 
 
 
-/* ================
- Header Area Start
- =============== */
+/* ============
+     Menu Start
+ ============ */
 
 .header-area {
     width: 100%;
@@ -142,6 +139,11 @@ ul {
     position: absolute;
     z-index: 99999;
     border-bottom: 1px solid #545454;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
 }
 
 .header-area .menu-bg .menu-bar {
@@ -149,18 +151,21 @@ ul {
     height: 100%;
     margin: 0 auto;
     text-transform: uppercase;
+    transition: all linear .4s;
 }
 
 .header-area .menu-bg .menu-bar .logo {
-    width: 260px;
+    width: 270px;
     height: 100px;
-    margin-right: 150px;
+    margin-right: 140px;
     float: left;
+    transition: all linear .4s;
 }
 
 .header-area .menu-bg .menu-bar .logo a {
     display: block;
     margin: 28px 0;
+    transition: all linear .4s;
 }
 
 .header-area .menu-bg .menu-bar .logo a img {
@@ -172,6 +177,7 @@ ul {
     float: left;
     width: 620px;
     height: 100px;
+    transition: all linear .4s;
 }
 
 
@@ -218,7 +224,7 @@ ul {
 
 .header-area .menu-bg .menu-bar .menu-list li ul li a {
     color: #2a2b2c;
-    line-height: 33px;
+    line-height: 33px !important;
     padding: 0 120px 0 25px;
 }
 
@@ -226,6 +232,11 @@ ul {
     width: 170px;
     height: 100px;
     float: left;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
 }
 
 .header-area .menu-bg .menu-bar .book-now a {
@@ -242,6 +253,55 @@ ul {
     -ms-transition: all .3s;
     -o-transition: all .3s;
 }
+
+.bg {
+    height: 80px !important;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed !important;
+}
+
+.bg .menu-bar {
+    height: 80px !important;
+}
+
+.bg .menu-bar .logo {
+    height: 80px !important;
+}
+
+.bg .menu-bar .logo a {
+    margin: 16.5px 0 !important;
+}
+
+.bg .menu-bar .menu-list {
+    height: 80px !important;
+}
+
+.bg .menu-bar .menu-list li a {
+    line-height: 80px !important;
+}
+
+.bg .menu-bar .menu-list ul li:hover ul {
+    top: 80px !important;
+}
+
+.bg .menu-bar .book-now {
+    height: 80px !important;
+}
+
+.bg .menu-bar .book-now a {
+    line-height: 80px !important;
+}
+
+/* ==========
+    Menu Ends
+=========== */
+
+
+
+/* ===============
+    Banner Starts
+=============== */
+
 
 
 .header-area .banner-bg {
@@ -287,16 +347,15 @@ ul {
 }
 
 
-
-/* ===============
- Header Area Ends
- ============== */
+/* ============
+    Banner Ends
+============ */
 
 
 
 /*===================
-  Discover Area Start
- ================== */
+Discover Area Start
+================== */
 
 
 .discover-bg {
@@ -1166,6 +1225,54 @@ ul {
 
 
 
+/* ===============
+ Scrool Top Starts
+ =============== */
+
+.scrollTop {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    background: crimson;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    border-radius: 50%;
+    animation: tob 1s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-animation: tob 1s;
+}
+
+@keyframes tob {
+    0% {
+        bottom: 100%;
+    }
+
+    100% {
+        bottom: 30px
+    }
+}
+
+.scrollTop i {
+    font-size: 25px;
+    line-height: 40px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    color: #fff;
+}
+
+
+/* =============
+ Scrool Top Ends
+ ============== */
+
+
+
+
 
 /* ============
   Effect Start
@@ -1219,4 +1326,8 @@ ul {
 
 .footer-bg .footer-content .footer-content-bottom p a:hover {
     color: #fff;
+}
+
+.bg .menu-bar .menu-list ul li:hover ul {
+    top: 80px;
 }
