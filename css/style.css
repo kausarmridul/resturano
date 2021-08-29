@@ -292,6 +292,8 @@ ul {
     line-height: 80px !important;
 }
 
+.asd {}
+
 .hide {
     transform: translateY(-100vh);
     transition: all linear 1s 2s;
